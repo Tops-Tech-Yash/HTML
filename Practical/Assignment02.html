@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        td{
+            padding: 10px;
+        }
+        input{
+            font-size: 20px;
+            background-color: rgb(61, 220, 220);
+        }
+        select{
+            background-color: rgb(61, 220, 220);
+            padding: 10px;
+        }
+        textarea{
+            font-size: 20px;
+            background-color: rgb(61, 220, 220);
+        }
+        button{
+            padding: 10px 20px;
+            background-color: rgb(61, 220, 220);
+        }
+    </style>
+</head>
+<body>
+    <h1>Assignment 2</h1>
+    <h3>Contact form created with table</h3>
+    <fieldset>
+        <form action="">
+            <table>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="" id="" value="" required></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="" id="" required></td>
+            </tr>
+            <tr>
+                <td>Ph No.</td>
+                <td><input type="tel" name="" id="" pattern="[0-9]{10,11}"></td>
+            </tr>
+            <tr>
+                <td>Subject:</td>
+                <td><select name="" id="">
+                    <option value="" selected disabled>Select Subject</option>
+                    <option value="">HTML</option>
+                    <option value="">CSS</option>
+                    <option value="">JS</option>
+                    <option value="">React JS</option>
+                    <option value="">Next JS</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Message</td>
+                <td><textarea name="" id=""></textarea></td>
+            </tr>
+            <tr >
+                <td><button>Submit</button></td>
+            </tr>
+        </table>
+        </form>
+    </fieldset>
+<br><br>
+    <h3>Contact form created without table</h3>
+
+    <fieldset>
+        <legend>Contact Form</legend>
+        <form action="">
+           Full Name <input type="text" name="" id="" required style="margin-left: 5px;"> <br><br>
+           Email <input type="email" name="" id="" required pattern="[@gmail.com]" style="margin-left: 35px;"> <br><br>
+           ph no. <input type="tel" name="" id="" pattern="[0-9] {10,11}" style="margin-left: 35px;"> <br><br>
+           Subject <select name="" id="" style="margin-left: 30px;">
+            <option value="" selected disabled >Select Subject</option>
+            <option value="">HTML 5</option>
+            <option value="">CSS 3</option>
+            <option value="">Javascript</option>
+            <option value="">React Js</option>
+            <option value="">Vue</option>
+           </select><br><br>
+           Message: <textarea name="" id="" style="margin-left: 15px;"></textarea> <br><br>
+           <button type="submit">Submit</button>
+        </form>
+    </fieldset>
+</body>
+</html>
